@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat; /* para a imagem nao repetir*/
   background-position: top center; /* centralizou a imagem no eixo x*/
   background-size: cover; /*cobrir toda area visivel */
+  height: 100vh;
 }
 :root {
   --text-color: white;
@@ -40,9 +41,9 @@ body * {
   margin-top: 56px;
   margin-bottom: auto;
   padding: 0 24px;
-  max-width:588px; 
+  max-width: 588px;
 }
-                      /* PROFILE */
+/* PROFILE */
 #profile {
   text-align: center;
   padding: 24px; /*preenchimento interno da caixa*/
@@ -56,18 +57,18 @@ body * {
   line-height: 24px;
   margin-top: 8px;
 }
-#switch{
+#switch {
   position: relative;
   width: 64px;
   margin: 4px auto;
 }
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
-  background:white;
+  background: white;
   border: 0;
   border-radius: 50%;
-  background-image: var(--switch-bg-url); 
+  background-image: var(--switch-bg-url);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -75,12 +76,11 @@ body * {
   transform: translateY(-50%);
   top: 50%;
 }
-.light #switch button{
-  right:0;
+.light #switch button {
+  right: 0;
   left: initial;
-
 }
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
@@ -119,7 +119,7 @@ ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
-                      /* SOCIAL ICONS */
+/* SOCIAL ICONS */
 #social-links {
   display: flex;
   justify-content: center;
@@ -142,4 +142,13 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
